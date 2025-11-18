@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="home.html" class="nav-logo">🍽️ DesiAdda</a>
+    <a href="home.html" class="nav-btn">Home</a>
+</nav>
+
+<h1 id="page-title">✨ Choose Your Food ✨</h1>
+
+<!-- FOOD ITEMS -->
+<div class="food-container reveal">
+
+    <div class="food-card" onclick="showRecipe('chicken')">
+        <img src="photos/chicken.jpg">
+        <p>Chicken Kadai</p>
+    </div>
+
+    <div class="food-card" onclick="showRecipe('paneer')">
+        <img src="photos/paneer.jpg">
+        <p>Paneer Butter Masala</p>
+    </div>
+
+    <div class="food-card" onclick="showRecipe('biryani')">
+        <img src="photos/biryani.jpg">
+        <p>Biryani</p>
+    </div>
+
+</div>
+
+<div class="food-container reveal">
+
+    <div class="food-card" onclick="showRecipe('rajma')">
+        <img src="photos/rajma.jpg">
+        <p>Rajma Chawal</p>
+    </div>
+
+    <div class="food-card" onclick="showRecipe('aloo')">
+        <img src="photos/download.jpeg">
+        <p>Aloo Paratha</p>
+    </div>
+
+    <div class="food-card" onclick="showRecipe('dal')">
+        <img src="photos/dal.jpg">
+        <p>Dal Makhani</p>
+    </div>
+
+</div>
+
+<div class="food-container reveal">
+
+    <div class="food-card" onclick="showRecipe('idli')">
+        <img src="photos/idli.jpg">
+        <p>Idli Sambhar</p>
+    </div>
+
+    <div class="food-card" onclick="showRecipe('pavbhaji')">
+        <img src="photos/pavaBhaji.jpg">
+        <p>Pav Bhaji</p>
+    </div>
+
+    <div class="food-card" onclick="showRecipe('poha')">
+        <img src="photos/poha.jpg">
+        <p>Poha</p>
+    </div>
+
+</div>
+<br>
+
+<h2 class="section-title reveal">Indian Sweets</h2>
+
+<div class="food-container reveal"  id="sweets">
+
+    <div class="food-card" onclick="showRecipe('gulab')">
+        <img src="photos/gulab.jpg">
+        <p>Gulab Jamun</p>
+    </div>
+
+    <div class="food-card" onclick="showRecipe('rabdi')">
+        <img src="photos/rabdi.jpg">
+        <p>Rabdi</p>
+    </div>
+
+    <div class="food-card" onclick="showRecipe('custard')">
+        <img src="photos/custard.jpg">
+        <p>Custard</p>
+    </div>
+
+</div>
+
+<!-- POPUP -->
+
+<div id="recipe-popup" class="popup hidden">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">✖</span>
+
+
+        <iframe id="recipe-video" width="100%" height="250"
+            style="border-radius:10px; margin-bottom:15px;"
+            frameborder="0" allowfullscreen>
+        </iframe>
+
+
+        <h2 id="recipe-title"></h2>
+
+
+        <p id="recipe-text"></p>
+
+
+        <a id="blinkit-link" href="#" target="_blank" class="blinkit-btn">
+            🛒 Buy Ingredients on Blinkit
+        </a>
+    </div>
+</div>
+
+
+<script src="scripts/script.js"></script>
+
+<footer reveal>
+    Made with ❤️ for Food Lovers | DesiAdda © 2025
+</footer>
+
+</body>
+</html>
